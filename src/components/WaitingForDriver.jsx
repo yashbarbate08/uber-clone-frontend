@@ -1,5 +1,5 @@
 import React from "react";
-import ubergo from "../assets/UberGo.png";
+import ubergo from "../assets/uberGo.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaDotCircle } from "react-icons/fa";
 import { TbSquareDotFilled } from "react-icons/tb";
