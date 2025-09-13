@@ -1,6 +1,6 @@
 import React from "react";
 import { BsChevronCompactDown } from "react-icons/bs";
-import ubergo from "../assets/Ubergo.png";
+import ubergo from "../assets/ubergo.png";
 import auto from "../assets/auto.png";
 import moto from "../assets/moto.png";
 
