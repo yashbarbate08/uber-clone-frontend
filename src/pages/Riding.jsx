@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import map from "../assets/map.jpg";
 import { HiHome } from "react-icons/hi";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import ubergo from "../assets/UberGo.png";
+import ubergo from "../assets/uberGo.png";
 import { FaDotCircle } from "react-icons/fa";
 import { TbSquareDotFilled, TbCoinRupeeFilled } from "react-icons/tb";
 import { SocketContext } from "../context/SocketContext";
