@@ -6,6 +6,7 @@ import ubergo from "../assets/uberGo.png";
 import { FaDotCircle } from "react-icons/fa";
 import { TbSquareDotFilled, TbCoinRupeeFilled } from "react-icons/tb";
 import { SocketContext } from "../context/SocketContext";
+import LiveTracking from "../components/LiveTracking";
 
 const Riding = () => {
   const location = useLocation();
@@ -49,7 +50,8 @@ const Riding = () => {
 
       {/* Map */}
       <div className="w-full h-screen">
-        <img src={map} alt="Map" className="w-full h-full object-cover" />
+        {/* <img src={map} alt="Map" className="w-full h-full object-cover" /> */}
+        <LiveTracking/>
       </div>
 
       {/* Ride Info Panel */}

@@ -67,14 +67,14 @@ const Home = () => {
   }, [socket, user]);
 
   socket.on("ride-confirmed", (ride) => {
-    console.log("Ride confirmed:");
+    // console.log("Ride confirmed:");
     setwaitingForDriver(true);
     setlookingForDriver(false);
     setride(ride);
   });
 
   socket.on("ride-started", (ride) => {
-    console.log("Ride started:");
+    // console.log("Ride started:");
     setwaitingForDriver(false);
     setride(ride);
     navigate("/riding", { state: { ride } });
@@ -138,7 +138,7 @@ const Home = () => {
         }
       );
 
-      console.log(response.data.fare);
+      // console.log(response.data.fare);
 
       setFare(response.data.fare);
 
@@ -160,7 +160,7 @@ const Home = () => {
         }
       );
 
-      console.log(response.data);
+      // console.log(response.data);
 
       // setlocationDets(response.data.ride);
     } catch (error) {

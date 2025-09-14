@@ -15,7 +15,7 @@ const UserSignup = () => {
 
   useEffect(() => {
     if (user?.email) {
-      console.log("Updated user:", user);
+      // console.log("Updated user:", user);
     }
   }, [user]);
 
@@ -36,7 +36,7 @@ const UserSignup = () => {
 
       if (response.status === 201) {
         const data = response.data;
-        console.log("Signup Response:", data);
+        // console.log("Signup Response:", data);
 
         // use the values the user just filled
         setuser({

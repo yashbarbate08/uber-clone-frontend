@@ -6,6 +6,7 @@ import { FaChevronUp } from "react-icons/fa6";
 import FinishRide from "../components/FinishRide";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import LiveTracking from "../components/LiveTracking";
 
 const CaptionRiding = () => {
   const [finishRidePanal, setFinishRidePanal] = useState(false);
@@ -13,7 +14,7 @@ const CaptionRiding = () => {
   const location = useLocation();
   const rideData = location.state?.ride;
 
-  console.log("rideData:" + rideData);
+  // console.log("rideData:" + rideData);
 
   useGSAP(() => {
     if (finishRidePanal) {
@@ -41,7 +42,8 @@ const CaptionRiding = () => {
 
       {/* Map */}
       <div className="w-full h-[80%]">
-        <img src={map} alt="Map" className="w-full h-full object-cover" />
+        {/* <img src={map} alt="Map" className="w-full h-full object-cover" /> */}
+        <LiveTracking />
       </div>
 
       {/* Logout Button */}

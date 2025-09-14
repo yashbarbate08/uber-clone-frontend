@@ -58,7 +58,7 @@ const CaptionHome = () => {
   }, []);
 
   socket.on("new-ride", (data) => {
-    console.log("New ride request received:", data);
+    // console.log("New ride request received:", data);
     setride(data);
     setridePopUpPanal(true);
   });

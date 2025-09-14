@@ -11,7 +11,7 @@ const ConfirmRidePopUp = (props) => {
   const submitHandler = async (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log("OTP submitted:", OTP);
+    // console.log("OTP submitted:", OTP);
 
     const response = await axios.get(
       `${import.meta.env.VITE_BASE_URL}/rides/start-ride`,
@@ -27,7 +27,7 @@ const ConfirmRidePopUp = (props) => {
     );
 
     if (response.status === 200) {
-      console.log("caption riding");
+      // console.log("caption riding");
       // props.setconfirmRidePopUpPanal(false);
       // props.setridePopupPanel(false);
       navigate("/caption-riding", { state: { ride: props.ride } });
